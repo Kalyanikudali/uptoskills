@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+main {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.header-title {
+   
+    width: 30px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.logo-image{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 50px; 
+}
+.header-center {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tata-image{
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #0077B5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.header-icon i {
+    color: white;
+    font-size: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+
+.post-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+/* Add this new class */
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+/* Modify existing p styles */
+.job-card p {
+    margin: 4px 0;
+    color: #666;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.company {
+    font-weight: normal;
+    color: black;
+}
+
+.badge {
+    background: green;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.job-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+.candidates-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.total-candidates {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.delete-btn, .candidates-btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.delete-btn {
+    background-color: #ff6600;
+    color: white;
+}
+
+.candidates-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.total-candidates {
+    font-size: 12px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.share-section {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: transform 0.2s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+.fa-facebook { color: #1877F2; }
+.fa-linkedin { color: #0077B5; }
+.fa-instagram { color: #E4405F; }
+.fa-whatsapp { color: #25D366; }
+.fa-telegram {color: #0088cc;}
+.fa-twitter {color: #1DA1F2}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        padding: 0;
+    }
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+    .header-title, .header-buttons {
+        display: none;
+    }
+}
